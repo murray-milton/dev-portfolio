@@ -1,14 +1,14 @@
-import React from "react";
-import html from "../assets/html.png";
-import css from "../assets/css.png";
-import javascript from "../assets/javascript.png";
-import tailwind from "../assets/tailwind.png";
-import react from "../assets/react.png";
-import java from "../assets/Java.png";
-import fastapi from "../assets/fastapi.png";
-import nodejs from "../assets/nodejs.png";
-import redux from "../assets/redux.png";
-import "../components/skills.css";
+import React from 'react';
+import html from '../assets/html.png';
+import css from '../assets/css.png';
+import javascript from '../assets/javascript.png';
+import tailwind from '../assets/tailwind.png';
+import react from '../assets/react.png';
+import java from '../assets/Java.png';
+import fastapi from '../assets/fastapi.png';
+import nodejs from '../assets/nodejs.png';
+import redux from '../assets/redux.png';
+import '../components/skills.css';
 
 function Skills() {
   const techStack = [
@@ -23,14 +23,14 @@ function Skills() {
     redux,
   ];
   const toolTips = [
-    "HTML5 - Markup Language",
-    "CSS3 - Style Sheet Language",
-    "JavaScript - Programming Language",
-    "Tailwind - CSS Framework",
-    "React - JavaScript Library",
-    "Java - Programming Language",
-    "FastAPI - Web Framework",
-    "Node.Js",
+    'HTML5 - Markup Language',
+    'CSS3 - Style Sheet Language',
+    'JavaScript - Programming Language',
+    'Tailwind - CSS Framework',
+    'React - JavaScript Library',
+    'Java - Programming Language',
+    'FastAPI - Web Framework',
+    'Node.Js',
   ];
 
   return (
@@ -44,11 +44,11 @@ function Skills() {
           title={toolTips[index]} // Adding tooltip on hover
           className="orbit-element"
           style={{
-            "--orbit-index": index,
-            "--total-elements": techStack.length,
-            "--orbit-duration": `${techStack.length * 5}s`,
-            "--size": "120px",
-            "--distance": "230px",
+            '--orbit-index': index,
+            '--total-elements': techStack.length,
+            '--orbit-duration': `${techStack.length * 5}s`,
+            '--size': '120px',
+            '--distance': '230px',
           }}
         />
       ))}

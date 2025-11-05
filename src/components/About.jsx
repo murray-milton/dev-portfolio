@@ -1,5 +1,6 @@
-import React from "react";
-import aboutImg from "../assets/about_milton.jpeg";
+import React from 'react';
+import aboutImg from '../assets/about_milton.jpeg';
+
 function About() {
   return (
     <div className="text-white max-w-[1200px] mx-auto my-12" id="about">
@@ -19,7 +20,7 @@ function About() {
               fitness, activities that underscore my commitment to continuous
               personal and professional growth. I seek opportunities with
               dynamic teams where I can contribute my problem-solving skills and
-              positive mindset to transform challenges into successes. Let's
+              positive mindset to transform challenges into successes. Let&apos;s
               connect and explore how we can create impactful solutions
               together.
             </p>

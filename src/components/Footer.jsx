@@ -1,5 +1,5 @@
-import React from "react";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import React from 'react';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
 function Footer() {
   return (
@@ -19,7 +19,7 @@ function Footer() {
           <FaLinkedin size={30} />
         </a>
         <a
-          href="https://github.com/yourprofile"
+          href="https://github.com/murray-milton"
           target="_blank"
           rel="noopener noreferrer"
           className="text-gray-600 hover:text-white transition-colors"

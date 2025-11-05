@@ -1,7 +1,7 @@
-import React from "react";
-import heroimage from "../assets/milton_pro.png";
-import { TypeAnimation } from "react-type-animation";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import React from 'react';
+import heroimage from '../assets/milton_pro.png';
+import { TypeAnimation } from 'react-type-animation';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
 function Hero() {
   return (
@@ -15,14 +15,14 @@ function Hero() {
       </div>
       <div className="col-span-2 px-5 my-auto">
         <h1 className="text-white text-4xl sm:text-5xl lg:text-8xl font-extrabold">
-          <span className="primary-color">I'm a</span> <br />
+          <span className="primary-color">I&apos;m a</span> <br />
           <TypeAnimation
             sequence={[
-              "Full Stack Developer",
+              'Full Stack Developer',
               1000,
-              "Problem Solver",
+              'Problem Solver',
               1000,
-              "Application Developer",
+              'Application Developer',
               1000,
             ]}
             wrapper="span"
@@ -60,7 +60,7 @@ function Hero() {
           </a>
           {/* GitHub Icon */}
           <a
-            href="https://github.com/murraymilton"
+            href="https://github.com/murray-milton"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub Profile"

@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import React, { useState } from 'react';
+import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 
 function Navbar() {
   const [nav, setNav] = useState(false);
@@ -26,7 +26,7 @@ function Navbar() {
       </div>
       <div
         className={`${
-          nav ? "fixed left-0" : "fixed left-[-100%]"
+          nav ? 'fixed left-0' : 'fixed left-[-100%]'
         } top-0 w-[60%] h-full bg-[#202121] ease-in-out duration-500 z-10`}
       >
         <h1 className="text-3xl primary-color m-4">M. Milton</h1>
