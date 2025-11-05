@@ -8,6 +8,7 @@ import java from '../assets/Java.png';
 import fastapi from '../assets/fastapi.png';
 import nodejs from '../assets/nodejs.png';
 import redux from '../assets/redux.png';
+import python from '../assets/python.png';
 import '../components/skills.css';
 
 function Skills() {
@@ -21,6 +22,7 @@ function Skills() {
     fastapi,
     nodejs,
     redux,
+    python,
   ];
   const toolTips = [
     'HTML5 - Markup Language',
@@ -29,6 +31,7 @@ function Skills() {
     'Tailwind - CSS Framework',
     'React - JavaScript Library',
     'Java - Programming Language',
+    'Python - Programming Language',
     'FastAPI - Web Framework',
     'Node.Js',
   ];
@@ -41,7 +44,7 @@ function Skills() {
           key={`tech-stack-item-${index}`}
           src={tech}
           alt={toolTips[index]}
-          title={toolTips[index]} // Adding tooltip on hover
+          title={toolTips[index]} 
           className="orbit-element"
           style={{
             '--orbit-index': index,
