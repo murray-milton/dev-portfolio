@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.ab3361fa.css",
+    "main.js": "/portfolio/static/js/main.dc959cd2.js",
+    "static/media/proj4.png": "/portfolio/static/media/proj4.7a7c5ae7e60fdc25efb6.png",
+    "static/media/proj6.png": "/portfolio/static/media/proj6.c20ad92a8be8f8122227.png",
+    "static/media/proj2.png": "/portfolio/static/media/proj2.0cdc3a82b24ed5b21941.png",
+    "static/media/proj5.png": "/portfolio/static/media/proj5.9c9641ffe8c6587eb4d8.png",
+    "static/media/redux.png": "/portfolio/static/media/redux.97b69dff6f32afbd21dd.png",
+    "static/media/Java.png": "/portfolio/static/media/Java.15520c5fe57f59e91825.png",
+    "static/media/about_milton.jpeg": "/portfolio/static/media/about_milton.f75005c37339dbc532df.jpeg",
+    "static/media/proj3.png": "/portfolio/static/media/proj3.0ab9802a69bd0d58adee.png",
+    "static/media/proj1.svg": "/portfolio/static/media/proj1.454e52447449346b6e3a92e6c6e03517.svg",
+    "static/media/milton_pro.png": "/portfolio/static/media/milton_pro.4a5551631830cbbb18cd.png",
+    "static/media/nodejs.png": "/portfolio/static/media/nodejs.972fb33b550646046f67.png",
+    "static/media/fastapi.png": "/portfolio/static/media/fastapi.64b59628fd7ef962e24c.png",
+    "static/media/html.png": "/portfolio/static/media/html.dd25fc940a6a57ab49e1.png",
+    "static/media/css.png": "/portfolio/static/media/css.93707ba015ed1d4f9006.png",
+    "static/media/python.png": "/portfolio/static/media/python.9bd1c55f6261e75287fe.png",
+    "static/media/react.png": "/portfolio/static/media/react.0cf951a69d8e58f83f9d.png",
+    "static/media/javascript.png": "/portfolio/static/media/javascript.b9e7e4fbe5f0c143417c.png",
+    "static/media/tailwind.png": "/portfolio/static/media/tailwind.e47ac876b8d4d0bba47a.png",
+    "index.html": "/portfolio/index.html",
+    "main.ab3361fa.css.map": "/portfolio/static/css/main.ab3361fa.css.map",
+    "main.dc959cd2.js.map": "/portfolio/static/js/main.dc959cd2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ab3361fa.css",
+    "static/js/main.dc959cd2.js"
+  ]
+}
