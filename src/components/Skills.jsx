@@ -44,7 +44,7 @@ function Skills() {
           key={`tech-stack-item-${index}`}
           src={tech}
           alt={toolTips[index]}
-          title={toolTips[index]} 
+          title={toolTips[index]}
           className="orbit-element"
           style={{
             '--orbit-index': index,
