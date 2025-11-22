@@ -13,10 +13,9 @@ function Hero() {
           className="w-[260px] sm:w-[300px] md:w-[350px] rounded-3xl shadow-lg"
         />
       </div>
-
       <div className="col-span-2 px-5 my-auto">
         <h1 className="text-white text-4xl sm:text-5xl lg:text-7xl font-extrabold leading-tight">
-          <span className="primary-color">Hi, I’m Murray.</span> <br />
+          <span className="primary-color">Hi, I&apos;m Murray.</span> <br />
           <TypeAnimation
             sequence={[
               'Full Stack Developer',
@@ -32,13 +31,11 @@ function Hero() {
             className="text-white"
           />
         </h1>
-
         <p className="text-gray-300 sm:text-lg my-6 lg:text-xl max-w-[650px]">
           U.S. military veteran turned developer, focused on building clean,
-          reliable, and secure applications. I turn complex problems into 
+          reliable, and secure applications. I turn complex problems into
           straightforward, scalable solutions.
         </p>
-
         <div className="flex flex-wrap items-center mt-4">
           <a
             href={`${process.env.PUBLIC_URL}/assets/Murray_Milton_Resume.pdf`}
@@ -47,14 +44,12 @@ function Hero() {
           >
             Download CV
           </a>
-
           <a
             href="#contact"
             className="px-6 py-3 rounded-xl mr-4 border border-gray-400 text-white hover:bg-gradient-to-br hover:from-orange-500 hover:to-pink-500 hover:border-transparent duration-200"
           >
             Contact Me
           </a>
-
           <a
             href="https://www.linkedin.com/in/murray-milton"
             target="_blank"
@@ -64,7 +59,6 @@ function Hero() {
           >
             <FaLinkedin size={55} className="text-blue-500" />
           </a>
-
           <a
             href="https://github.com/murray-milton"
             target="_blank"
