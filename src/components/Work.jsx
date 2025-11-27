@@ -12,10 +12,10 @@ const projects = [
     title: 'Vaulty DLP Scanner',
     image: proj1,
     description:
-      'A local-first data loss prevention tool that scans files for sensitive patterns (PII) using rule-based detection and privacy-preserving workflows.',
-    tech: 'Python · Streamlit · Regex · pdfminer.six · DevSecOps',
+      'A privacy-first Data Loss Prevention (DLP) tool that scans documents for PII locally. Features a decoupled architecture for memory optimization, unit-tested regex heuristics, and interactive risk visualization.',
+    tech: 'Python · Streamlit · Pandas/Altair · CI/CD · Memory Optimization',
     github: 'https://github.com/murray-milton/vaulty-dlp-scanner',
-    demo: null,
+    demo: 'https://vaultydlpscanner.streamlit.app/',
   },
   {
     id: 2,
@@ -81,9 +81,10 @@ function Work() {
         {projects.map((project) => (
           <div
             key={project.id}
+            // UPDATED: Increased height to 300px (mobile) and 350px (desktop) to fit text
             className="transform transition-transform duration-300 hover:scale-105 overflow-hidden
                       shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center
-                      mx-auto content-div h-[200px] bg-cover relative"
+                      mx-auto content-div h-[300px] md:h-[350px] bg-cover relative"
           >
             <img
               src={project.image}
@@ -91,26 +92,32 @@ function Work() {
               className="w-full h-full object-cover"
             />
 
-            {/* Overlay */}
-            <div className="opacity-0 group-hover:opacity-90 bg-[gray]/70 absolute inset-0 flex flex-col 
-                            justify-center items-center px-4 text-center transition-opacity">
+            {/* Overlay - UPDATED: Darker background (90% opacity) for better text readability */}
+            <div className="opacity-0 group-hover:opacity-100 bg-[#0a192f]/90 absolute inset-0 flex flex-col 
+                            justify-center items-center px-4 text-center transition-opacity duration-300">
+              
               <span className="text-2xl font-bold text-white tracking-wider">
                 {project.title}
               </span>
 
-              <p className="text-sm text-gray-100 mt-2">{project.description}</p>
+              {/* UPDATED: Added leading-relaxed for readability and padding */}
+              <p className="text-sm text-gray-100 mt-2 py-2 leading-relaxed">
+                {project.description}
+              </p>
 
-              <p className="text-xs text-gray-200 mt-2">{project.tech}</p>
+              <p className="text-xs text-[#ccd6f6] font-mono mt-1 mb-4">
+                {project.tech}
+              </p>
 
               {/* Buttons */}
-              <div className="pt-4 flex flex-wrap justify-center gap-2">
+              <div className="flex flex-wrap justify-center gap-3">
                 {project.github && (
                   <a
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <button className="rounded-lg px-4 py-2 bg-white text-gray-700 font-bold text-sm">
+                    <button className="text-center rounded-lg px-4 py-2 bg-white text-gray-700 font-bold text-sm hover:bg-gray-200 transition-colors">
                       View Code
                     </button>
                   </a>
@@ -122,14 +129,14 @@ function Work() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <button className="rounded-lg px-4 py-2 bg-transparent border border-white text-white font-bold text-sm">
+                    <button className="text-center rounded-lg px-4 py-2 bg-transparent border border-white text-white font-bold text-sm hover:bg-white hover:text-black transition-colors">
                       Live Demo
                     </button>
                   </a>
                 )}
 
                 {!project.github && !project.demo && (
-                  <span className="mt-2 text-xs uppercase tracking-wide text-gray-100">
+                  <span className="mt-2 text-xs uppercase tracking-wide text-gray-400 border border-gray-600 rounded px-2 py-1">
                     In Development
                   </span>
                 )}
