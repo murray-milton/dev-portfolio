@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/dev-portfolio/static/css/main.2670997c.css",
-    "main.js": "/dev-portfolio/static/js/main.d98cd6f1.js",
+    "main.css": "/dev-portfolio/static/css/main.52079f04.css",
+    "main.js": "/dev-portfolio/static/js/main.fa5d58a5.js",
     "static/media/proj4.png": "/dev-portfolio/static/media/proj4.7a7c5ae7e60fdc25efb6.png",
     "static/media/proj6.png": "/dev-portfolio/static/media/proj6.c20ad92a8be8f8122227.png",
     "static/media/proj2.png": "/dev-portfolio/static/media/proj2.0cdc3a82b24ed5b21941.png",
@@ -11,11 +11,11 @@
     "static/media/proj1.svg": "/dev-portfolio/static/media/proj1.454e52447449346b6e3a92e6c6e03517.svg",
     "static/media/milton_pro.png": "/dev-portfolio/static/media/milton_pro.4a5551631830cbbb18cd.png",
     "index.html": "/dev-portfolio/index.html",
-    "main.2670997c.css.map": "/dev-portfolio/static/css/main.2670997c.css.map",
-    "main.d98cd6f1.js.map": "/dev-portfolio/static/js/main.d98cd6f1.js.map"
+    "main.52079f04.css.map": "/dev-portfolio/static/css/main.52079f04.css.map",
+    "main.fa5d58a5.js.map": "/dev-portfolio/static/js/main.fa5d58a5.js.map"
   },
   "entrypoints": [
-    "static/css/main.2670997c.css",
-    "static/js/main.d98cd6f1.js"
+    "static/css/main.52079f04.css",
+    "static/js/main.fa5d58a5.js"
   ]
 }
