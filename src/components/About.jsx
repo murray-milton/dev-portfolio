@@ -27,8 +27,8 @@ function About() {
 
             <p className="text-base lg:text-lg mb-4">
               Outside of coding, I stay active through fitness and channel my
-              creativity into music production—both of which keep me disciplined,
-              balanced, and always striving to grow.
+              creativity into music production—both of which keep me
+              disciplined, balanced, and always striving to grow.
             </p>
 
             <p className="text-base lg:text-lg">

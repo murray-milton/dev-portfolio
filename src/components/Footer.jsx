@@ -1,45 +1,46 @@
 import React from 'react';
-import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 function Footer() {
   return (
-    <footer className="flex items-center justify-between mx-auto max-w-[1200px] h-auto p-12">
-      {/* Name on the left */}
-      <span className="text-xl font-bold primary-color">M.Milton</span>
+    <div className="w-full bg-primary py-8 px-4 border-t border-tertiary">
+      <div className="max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+        
+        {/* Brand / Logo */}
+        <div className="text-2xl font-bold font-mono">
+          <span className="text-textLight">M.</span>
+          {/* 🔥 MATCHING THE SUNSET GRADIENT HERE */}
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-pink-600">
+            Milton
+          </span>
+        </div>
 
-      {/* Centered icons */}
-      <div className="flex items-center justify-center space-x-4">
-        <a
-          href="https://www.linkedin.com/in/murray-milton"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-blue-600 hover:text-blue-500 transition-colors"
-          aria-label="LinkedIn"
-        >
-          <FaLinkedin size={30} />
-        </a>
-        <a
-          href="https://github.com/murray-milton"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-gray-600 hover:text-white transition-colors"
-          aria-label="GitHub"
-        >
-          <FaGithub size={30} />
-        </a>
-      </div>
+        {/* Social Icons */}
+        <div className="flex gap-6">
+          <a 
+            href="https://github.com/murray-milton" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="text-textDim hover:text-accent transition-colors duration-300 text-2xl"
+          >
+            <FaGithub />
+          </a>
+          <a 
+            href="https://linkedin.com/in/murray-milton" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-textDim hover:text-accent transition-colors duration-300 text-2xl"
+          >
+            <FaLinkedin />
+          </a>
+        </div>
 
-      {/* Email on the right */}
-      <div className="text-gray-600">
-        <a
-          href="mailto:miltonmln357@gmail.com"
-          className="hover:text-gray-500 transition-colors"
-          aria-label="Send me an email"
-        >
+        {/* Email */}
+        <p className="text-textDim text-sm font-mono">
           miltonmln357@gmail.com
-        </a>
+        </p>
       </div>
-    </footer>
+    </div>
   );
 }
 

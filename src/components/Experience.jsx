@@ -1,123 +1,93 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 const experiences = [
   {
     id: 1,
-    year: '2022–2025',
-    label: '2022–2025',
-    title: 'B.S. Software Development & Security',
+    year: '2024 – Present',
+    title: 'Software Engineering Journey',
+    role: 'Aspiring Software Engineer',
     description:
-      'Pursuing a Bachelor of Science in Software Development and Security at the University of Maryland Global Campus (UMGC), focusing on secure software engineering, databases, and cloud technologies. Graduating in 2025.',
+      'Continuing to grow as a full stack developer with a focus on Python, React, cloud architecture, and automation while targeting professional software engineering roles.',
   },
   {
     id: 2,
-    year: '2023',
-    label: '2023',
-    title: 'Hack Reactor – Full Stack Software Engineering Bootcamp',
+    year: '2023 – 2024',
+    title: 'Independent Projects',
+    role: 'Full Stack Developer',
     description:
-      'Completed Hack Reactor’s full-time full stack software engineering bootcamp, gaining hands-on experience in JavaScript, Python, React, Node.js, SQL, and modern development workflows while building production-style applications.',
+      'Built production-ready full stack applications including the Vaulty DLP Scanner and this developer portfolio. Applied clean architecture, secure coding practices (DevSecOps), and modern CI/CD tooling.',
   },
   {
     id: 3,
-    year: '2023–2024',
-    label: '2023–2024',
-    title: 'Full Stack Developer – Independent Projects',
+    year: '2023',
+    title: 'Hack Reactor',
+    role: 'Full Stack Software Engineering Bootcamp',
     description:
-      'Built full stack applications including the Vaulty DLP Scanner and this developer portfolio, applying clean architecture, secure coding practices, and modern DevOps tooling.',
+      'Completed an intensive full-time software engineering bootcamp. Gained hands-on experience in JavaScript, Python, React, Node.js, and SQL while building scalable applications in an Agile environment.',
   },
   {
     id: 4,
-    year: '2024–Present',
-    label: '2024–Present',
-    title: 'Software Engineering Journey',
+    year: '2022 – 2025',
+    title: 'University of Maryland Global Campus',
+    role: 'B.S. Software Development & Security',
     description:
-      'Continuing to grow as a full stack developer with a focus on Python, React, cloud, and automation while targeting professional software engineering roles.',
+      'Pursuing a Bachelor of Science focused on secure software engineering, database management, and cloud technologies. Expected graduation in 2025.',
   },
 ];
 
 function Experience() {
-  // Default highlight: your UMGC degree (first entry)
-  const [activeId, setActiveId] = useState(1);
-
   return (
-    <section
-      id="experience"
-      className="max-w-[1200px] mx-auto px-5 mt-20 text-white"
-    >
-      <h2 className="text-3xl mb-4 font-bold primary-color">Experience</h2>
-      <p className="text-gray-400 mb-10 max-w-[700px]">
-        A timeline of my journey through formal education, intensive bootcamp
-        training, and full stack development.
-      </p>
-
-      <div className="relative flex">
-        {/* Left: Vertical timeline */}
-        <div className="relative">
-          {/* Line */}
-          <div className="absolute left-1/2 -translate-x-1/2 top-0 h-full w-[3px] bg-gray-500/60" />
-
-          {/* Years + dots */}
-          <div className="flex flex-col justify-between h-full py-4 space-y-10">
-            {experiences.map((exp) => {
-              const isActive = exp.id === activeId;
-              return (
-                <button
-                  key={exp.id}
-                  type="button"
-                  onMouseEnter={() => setActiveId(exp.id)}
-                  className="relative flex flex-col items-center my-4 focus:outline-none"
-                >
-                  {/* Year label */}
-                  <span
-                    className={`transition-all duration-300 ${
-                      isActive
-                        ? 'text-4xl font-extrabold text-white drop-shadow-md'
-                        : 'text-base text-gray-300 opacity-80'
-                    } mb-3`}
-                  >
-                    {exp.label}
-                  </span>
-
-                  {/* Dot */}
-                  <div
-                    className={`rounded-full transition-all duration-300 ${
-                      isActive
-                        ? 'w-5 h-5 bg-orange-500 shadow-[0_0_12px_rgba(255,106,0,0.8)]'
-                        : 'w-4 h-4 bg-gray-300'
-                    }`}
-                  />
-                </button>
-              );
-            })}
-          </div>
+    <div name='experience' className='w-full min-h-screen bg-primary text-textLight py-20'>
+      <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
+        
+        {/* Header */}
+        <div className='pb-8'>
+          <p className='text-4xl font-bold inline border-b-4 border-accent text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-pink-600'>
+            Experience
+          </p>
+          <p className='py-4 text-textDim'>
+            {"// My academic and professional journey"}
+          </p>
         </div>
 
-        {/* Right: Detail cards */}
-        <div className="ml-12 flex-1 space-y-8">
-          {experiences.map((exp) => {
-            const isActive = exp.id === activeId;
-            return (
-              <div
-                key={exp.id}
-                onMouseEnter={() => setActiveId(exp.id)}
-                className={`group bg-white/5 border rounded-xl p-5 backdrop-blur-sm transition-all duration-300
-                  ${
-                    isActive
-                      ? 'border-orange-500 bg-white/10 translate-x-1'
-                      : 'border-gray-700 hover:bg-white/10 hover:translate-x-1'
-                  }`}
-              >
-                <p className="text-xs uppercase tracking-wide text-orange-400 mb-1">
-                  {exp.year}
+        {/* Timeline Container */}
+        <div className="relative border-l-2 border-tertiary ml-3 md:ml-6 space-y-12">
+          
+          {experiences.map((exp) => (
+            <div key={exp.id} className="mb-10 ml-8 relative group">
+              
+              {/* Timeline Dot (Glows on Hover) */}
+              <div className="absolute -left-[43px] mt-1.5 w-5 h-5 rounded-full border-4 border-primary bg-tertiary transition-all duration-300 group-hover:bg-accent group-hover:shadow-[0_0_15px_rgba(56,189,248,0.6)]"></div>
+
+              {/* Card */}
+              <div className="bg-secondary p-6 rounded-lg shadow-lg border border-transparent hover:border-tertiary transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+                
+                {/* Header Section */}
+                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-2">
+                  <h3 className="text-xl font-bold text-textLight group-hover:text-white transition-colors">
+                    {exp.title}
+                  </h3>
+                  <span className="text-sm font-mono text-accent bg-primary/50 px-2 py-1 rounded border border-tertiary mt-2 sm:mt-0 w-fit">
+                    {exp.year}
+                  </span>
+                </div>
+
+                {/* Subtitle */}
+                <h4 className="text-lg font-medium text-textDim mb-4 italic">
+                  {exp.role}
+                </h4>
+
+                {/* Description */}
+                <p className="text-textDim leading-relaxed">
+                  {exp.description}
                 </p>
-                <h3 className="text-xl font-semibold mb-2">{exp.title}</h3>
-                <p className="text-gray-300">{exp.description}</p>
               </div>
-            );
-          })}
+            </div>
+          ))}
+          
         </div>
       </div>
-    </section>
+    </div>
   );
 }
 

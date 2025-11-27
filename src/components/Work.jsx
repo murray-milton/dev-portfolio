@@ -93,9 +93,10 @@ function Work() {
             />
 
             {/* Overlay - UPDATED: Darker background (90% opacity) for better text readability */}
-            <div className="opacity-0 group-hover:opacity-100 bg-[#0a192f]/90 absolute inset-0 flex flex-col 
-                            justify-center items-center px-4 text-center transition-opacity duration-300">
-              
+            <div
+              className="opacity-0 group-hover:opacity-100 bg-[#0a192f]/90 absolute inset-0 flex flex-col 
+                            justify-center items-center px-4 text-center transition-opacity duration-300"
+            >
               <span className="text-2xl font-bold text-white tracking-wider">
                 {project.title}
               </span>
