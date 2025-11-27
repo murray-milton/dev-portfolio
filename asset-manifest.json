@@ -1,31 +1,21 @@
 {
   "files": {
-    "main.css": "/dev-portfolio/static/css/main.06093aa6.css",
-    "main.js": "/dev-portfolio/static/js/main.5cde3f90.js",
+    "main.css": "/dev-portfolio/static/css/main.2670997c.css",
+    "main.js": "/dev-portfolio/static/js/main.d98cd6f1.js",
     "static/media/proj4.png": "/dev-portfolio/static/media/proj4.7a7c5ae7e60fdc25efb6.png",
     "static/media/proj6.png": "/dev-portfolio/static/media/proj6.c20ad92a8be8f8122227.png",
     "static/media/proj2.png": "/dev-portfolio/static/media/proj2.0cdc3a82b24ed5b21941.png",
     "static/media/proj5.png": "/dev-portfolio/static/media/proj5.9c9641ffe8c6587eb4d8.png",
-    "static/media/redux.png": "/dev-portfolio/static/media/redux.97b69dff6f32afbd21dd.png",
-    "static/media/Java.png": "/dev-portfolio/static/media/Java.15520c5fe57f59e91825.png",
     "static/media/about_milton.jpeg": "/dev-portfolio/static/media/about_milton.f75005c37339dbc532df.jpeg",
     "static/media/proj3.png": "/dev-portfolio/static/media/proj3.0ab9802a69bd0d58adee.png",
     "static/media/proj1.svg": "/dev-portfolio/static/media/proj1.454e52447449346b6e3a92e6c6e03517.svg",
     "static/media/milton_pro.png": "/dev-portfolio/static/media/milton_pro.4a5551631830cbbb18cd.png",
-    "static/media/nodejs.png": "/dev-portfolio/static/media/nodejs.972fb33b550646046f67.png",
-    "static/media/fastapi.png": "/dev-portfolio/static/media/fastapi.64b59628fd7ef962e24c.png",
-    "static/media/html.png": "/dev-portfolio/static/media/html.dd25fc940a6a57ab49e1.png",
-    "static/media/css.png": "/dev-portfolio/static/media/css.93707ba015ed1d4f9006.png",
-    "static/media/python.png": "/dev-portfolio/static/media/python.9bd1c55f6261e75287fe.png",
-    "static/media/react.png": "/dev-portfolio/static/media/react.0cf951a69d8e58f83f9d.png",
-    "static/media/javascript.png": "/dev-portfolio/static/media/javascript.b9e7e4fbe5f0c143417c.png",
-    "static/media/tailwind.png": "/dev-portfolio/static/media/tailwind.e47ac876b8d4d0bba47a.png",
     "index.html": "/dev-portfolio/index.html",
-    "main.06093aa6.css.map": "/dev-portfolio/static/css/main.06093aa6.css.map",
-    "main.5cde3f90.js.map": "/dev-portfolio/static/js/main.5cde3f90.js.map"
+    "main.2670997c.css.map": "/dev-portfolio/static/css/main.2670997c.css.map",
+    "main.d98cd6f1.js.map": "/dev-portfolio/static/js/main.d98cd6f1.js.map"
   },
   "entrypoints": [
-    "static/css/main.06093aa6.css",
-    "static/js/main.5cde3f90.js"
+    "static/css/main.2670997c.css",
+    "static/js/main.d98cd6f1.js"
   ]
 }
