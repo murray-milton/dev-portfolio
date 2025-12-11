@@ -29,7 +29,7 @@ const experiences = [
     id: 4,
     year: '2022 – 2025',
     title: 'University of Maryland Global Campus',
-    role: 'B.S. Software Development & Security',
+    role: 'B.S. Applied Technology & Cyber Security',
     description:
       'Pursuing a Bachelor of Science focused on secure software engineering, database management, and cloud technologies. Expected graduation in 2025.',
   },
